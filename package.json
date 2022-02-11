@@ -1,6 +1,7 @@
 {
   "name": "cryptoreactv2",
   "version": "0.1.0",
+  "homepage": "https://bryan-pham-124.github.io/cryptoReactV2",
   "private": true,
   "proxy": "http://localhost:3000",
   "dependencies": {
@@ -15,9 +16,9 @@
     "request": "^2.88.2",
     "web-vitals": "^2.1.4"
   },
-
-  "proxy": "http://localhost:3000",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "nodemon": "^2.0.15"
   }
 }
