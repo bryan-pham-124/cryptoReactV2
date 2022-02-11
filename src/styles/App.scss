@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+.app-header {
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.app-description {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.app-description-small {
+    margin: 30px 0px;
+    font-size: 15px;
+     
+}
+
+.crypto-img {
+    height: 150px;
+}
+
+.supported-currencies {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.supported-currencies-header {
+    font-size: 17px;
+}
+
+.currency-container {
+    margin-top: 15px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    text-align: left;
+    .currency-coin {
+        margin-bottom: 15px;
+        font-size: 11px;
+        
+    }
+}
+
+.search-container {
+    .search-bar {
+        background-color: #2f2d2e;
+        border: none;
+        padding: 16px 26px;
+        color: white;
+        width: 270px;
+        font-size: 20px;
+    }
+    .search-btn {
+        text-decoration: none;
+        padding: 18.5px 25px;
+        //padding-bottom: 15px;
+        color: #2f2d2e;
+        font-weight: bold;
+        background-color: rgb(219, 219, 219);
+    }
+}
+
+
+.main-content-container {
+    margin: 50px 0px;
+}
+
+
+.search-history {
+    background-color: rgb(219, 219, 219);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .search-history-header{
+        font-size: 35px;
+    }
+}
+
+.history-item-list {
+    margin-top: 30px;
+    .history-item {
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        background-color: white;
+        margin-bottom: 20px;
+        position: relative;
+        padding: 0px 20px;
+        padding-top: 15px;
+        width: 350px;
+    }
+
+    .history-data {
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .history-item span {
+        font-weight: bold;
+    }
+
+    .delete-entry {
+        border: none;
+        background-color: #2f2d2e;
+        color: white;
+        padding: 10px 15px;
+        position: absolute;
+        right: 0;
+        transition: .5s;
+        &:hover {
+            background-color: rgb(190, 190, 190);
+            color: #2f2d2e
+        }
+
+    }
+}
+
+.crypto-currency-card {
+    background-color: #2f2d2e;
+    color: white;
+    padding: 60px;
+    margin-bottom: 30px;
+}
+
+.crypto-header {
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+    margin-top: 40px;
+}
+
+.crypto-timestamp {
+    margin-top: 30px;
+}
+
+.crypto-data-list {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    .crypto-data-entry {
+        margin: 0px 10px;
+        margin-bottom: 10px;
+    }
+
+    .crypto-data-entry-number {
+        font-weight: bold;
+    }
+    .crypto-data-entry-header {
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+.crypto-source   {
+     
+    a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: 10px;
+        border-bottom: 2px solid white;
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .currency-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .crypto-data-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .search-container {
+        .search-bar {
+            width: 50vw;
+            max-width: 470px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .currency-container {
+        position: relative;
+      
+    }   
+
+    .crypto-currency-card {
+        width: 700px;
+        ///display: flex;
+        //flex-direction: column;
+        //justify-self: end;
+        max-height: 400px;
+        margin-right: 20px;
+    }
+
+    .search-history {
+        width: 400px;
+        
+    }
+
+    /*
+    .search-history {
+        position: absolute;
+        right: 10px;
+     }
+     */
+
+    .main-content-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+  
+}
+
+
+@media only screen and (min-width: 1620px) {
+    
+   
+}
