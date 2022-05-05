@@ -1,1 +1,1 @@
- This application uses past retrieved data from the Coinmarket Cap Api. The data file information on prices for the 100 most popular cryptocurrencies on Feb 7, 2021. Since many crypotocurrency apps have CORS features, apps could not automatically get data from the API so I had to download the data onto a file.
+ This application uses past retrieved data from the Coinmarket Cap Api. The data file information on prices for the 100 most popular cryptocurrencies on Feb 7, 2021. 
